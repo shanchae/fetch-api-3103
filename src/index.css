@@ -11,3 +11,39 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.main {
+  background-color: #A0E7E5;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: bisque;
+  width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2em;
+}
+
+.img-container img{
+  width: 500px;
+  height: 500px;
+  border: 10px solid white;
+}
+
+.img-container{
+  display: flex;
+  align-items: center;
+  padding-right: 2em;
+}
+
+.truncate {
+  display: -webkit-box;
+  -webkit-line-clamp: 10;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
